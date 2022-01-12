@@ -1,4 +1,3 @@
-// import styled from 'styled-component';
 import styled from 'styled-components'
 export const Container = styled.div`
   padding: 0;
@@ -56,6 +55,20 @@ export const SignIn = styled.a`
 `
 export const Section = styled.section`
   display: flex;
+  flex-wrap: wrap;
   align-content: start;
   min-height: 700px;
+  padding-top: 40px;
+  padding-bottom: 138px;
+  padding: 60px 0;
+  position: relative;
+  width: 100%;
+  max-width: 1128px;
+  align-items: center;
+  margin: auto;
+
+  @media (max-width: 768px) {
+    margin: auto;
+    min-height: 0px;
+  }
 `
