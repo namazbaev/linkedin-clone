@@ -1,4 +1,4 @@
-import { Container, Section, SignIn, Join, Nav } from "./Login.style"
+import { Container, Section, SignIn, Join, Google, Form, Hero, Nav } from "./Login.style"
 
 
 const Login = () => {
@@ -18,7 +18,16 @@ const Login = () => {
         </div>
       </Nav>
       <Section>
-        Section
+        <Hero>
+          <h1>Welcome to your professional community</h1>
+          <img src="/images/login-hero.svg" alt="login-hero" />
+        </Hero>
+        <Form>
+          <Google>
+            <img src="/images/google.svg" alt="google" />
+            Sign in with Google
+          </Google>
+        </Form>
       </Section>
     </Container>
   )
