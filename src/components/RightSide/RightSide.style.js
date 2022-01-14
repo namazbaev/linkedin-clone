@@ -13,6 +13,7 @@ const FollowCard = styled.div`
   border: none;
   box-shadow: 0 0 0 1px rgb(0 0 0 / 15%), 0 0 0 rgb(0 0 0 / 20%);
   padding: 12px;
+  cursor: pointer;
 `
 const Title = styled.div`
   display: inline-flex;
@@ -45,6 +46,7 @@ const FeedList = styled.ul`
           }
           div {
             p {
+              margin-bottom: 5px;
               font-size: 12px;
               line-height: 20px;
               font-weight: 200;
@@ -69,10 +71,10 @@ const FollowButton = styled.div`
   box-sizing: border-box;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   max-height: 32px;
   max-width: 100px;
-  text-align: center;
+  /* text-align: center; */
   outline: none;
   span {
     font-size: 16px;

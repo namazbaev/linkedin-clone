@@ -77,7 +77,7 @@ const NavListWrap = styled.ul`
     span:after {
       content: '';
       transform: scaleX(1);
-      border-bottom: 2px solid var(--white, #fff);
+      border-bottom: 1.5px solid var(--white, #fff);
       bottom: 0;
       left: 0;
       position: absolute;

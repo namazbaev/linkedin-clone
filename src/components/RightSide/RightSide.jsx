@@ -9,22 +9,16 @@ const RightSide = () => {
         </Title>
         <FeedList>
           <li>
-            <a>
-              <Avatar />
-            </a>
+            <a> <Avatar /> </a>
             <div>
               <a>
-                <p>
-                  Satya Nadella
-                </p>
+                <p> Satya Nadella </p>
                 <div>
-                  <p>
-                    Chairman and CEO at Microsoft
-                  </p>
+                  <p> Chairman and CEO at Microsoft </p>
                 </div>
               </a>
               <FollowButton>
-                <img src="/images/plus-icon.png" alt="" />
+                <img src="/images/plus-icon.svg" alt="" />
                 <h1>Follow</h1>
               </FollowButton>
             </div>
@@ -35,18 +29,13 @@ const RightSide = () => {
             </a>
             <div>
               <a>
-                <p>
-                  Vera Filatova
-                </p>
+                <p> Vera Filatova </p>
                 <div>
-                  <p>
-                    IT Talent sourcer
-                  </p>
+                  <p> IT Talent sourcer </p>
                 </div>
-
               </a>
               <FollowButton>
-                <img src="/images/plus-icon.png" alt="" />
+                <img src="/images/plus-icon.svg" alt="" />
                 <h1>Follow</h1>
               </FollowButton>
             </div>
@@ -68,7 +57,7 @@ const RightSide = () => {
 
               </a>
               <FollowButton>
-                <img src="/images/plus-icon.png" alt="" />
+                <img src="/images/plus-icon.svg" alt="" />
                 <h1>Follow</h1>
               </FollowButton>
             </div>

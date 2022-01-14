@@ -60,6 +60,7 @@ const Widget = styled.div`
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   padding-top: 12px;
   padding-bottom: 12px;
+  cursor: pointer;
   & > a {
     text-decoration: none;
     display: flex;
@@ -75,12 +76,13 @@ const Widget = styled.div`
       text-align: left;
       span {
         font-size: 12px;
-        line-height: 1.333;
+        font-weight: 600;
+        line-height: 16px;
         &:first-child {
           color: rgba(0, 0, 0, 0.6);
         }
         &:nth-child(2) {
-          color: rgba(0, 0, 0, 1);
+          color: rgba(0, 0, 0, 0.9);
         }
       }
     }
@@ -95,6 +97,7 @@ const Item = styled.a`
   padding: 12px;
   font-size: 12px;
   display: block;
+  cursor: pointer;
   span {
     display: flex;
     align-items: center;
@@ -112,6 +115,7 @@ const CommunityCard = styled(ArtCard)`
   text-align: left;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
   a {
     color: #000;
     padding: 4px 12px 4px 12px;
@@ -120,7 +124,6 @@ const CommunityCard = styled(ArtCard)`
     font-weight: 600;
     color: #0a66c2;
     &:hover {
-      cursor: pointer;
       text-decoration: underline;
     }
     span {
