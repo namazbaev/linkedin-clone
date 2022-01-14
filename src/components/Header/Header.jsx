@@ -1,4 +1,4 @@
-import { Container, Content, Logo, Search, SearchIcon, Nav, NavListWrap, NavList, User, Work } from './Header.style'
+import { Container, Content, Logo, Search, SearchIcon, Nav, NavListWrap, NavList, User, Work, Try, SignOut } from './Header.style'
 const Header = () => {
   return (
     <Container>
@@ -51,17 +51,27 @@ const Header = () => {
             <User>
               <a>
                 <img src="/images/user.svg" alt="nav-user" />
-                <span>Me</span>
-                <img src="/images/down-icon.svg" alt="nav-down" />
+                <span>Me
+                  <img src="/images/down-icon.svg" alt="nav-down" />
+                </span>
               </a>
+              <SignOut>
+                <a>Sign out</a>
+              </SignOut>
             </User>
             <Work>
               <a>
                 <img src="/images/nav-work.svg" alt="nav-user" />
-                <span>Work</span>
-                <img src="/images/down-icon.svg" alt="nav-down" />
+                <span>Work
+                  <img src="/images/down-icon.svg" alt="nav-down" />
+                </span>
               </a>
             </Work>
+            <Try>
+              <a>
+                <span>Try Premium for free</span>
+              </a>
+            </Try>
           </NavListWrap>
         </Nav>
       </Content>
