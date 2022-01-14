@@ -35,23 +35,56 @@ const FeedList = styled.ul`
     & > div {
       display: flex;
       flex-direction: column;
+      text-align: left;
+      a {
+          p {
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 600;
+            color: rgba(0, 0, 0, 0.7);
+          }
+          div {
+            p {
+              font-size: 12px;
+              line-height: 20px;
+              font-weight: 200;
+              color: rgba(0, 0, 0, 0.5);
+            }
+          }
+      }
+      span {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 600;
+      }
     }
-    button {
-      background-color: transparent;
-      color: rgba(0, 0, 0, 0.6);
-      box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.6);
-      padding: 16px;
-      align-items: center;
-      border-radius: 15px;
-      box-sizing: border-box;
-      font-weight: 600;
-      display: inline-flex;
-      justify-content: center;
-      max-height: 32px;
-      max-width: 480px;
-      text-align: center;
-      outline: none;
-    }
+  }
+`
+const FollowButton = styled.div`
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.6);
+  padding: 16px;
+  border-radius: 25px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 32px;
+  max-width: 100px;
+  text-align: center;
+  outline: none;
+  span {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  img {
+    width: 16px;
+    height: 16px;
+  }
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.07);
+    box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.5);
   }
 `
 const Avatar = styled.div`
@@ -65,12 +98,23 @@ const Avatar = styled.div`
   margin-right: 8px;
 `
 const Recommendation = styled.a`
+  text-decoration: none;
   display: flex;
   align-items: center;
   font-size: 14px;
   line-height: 20px;
   font-weight: 600;
-  color: rgba(0, 0, 0, 0.535);
+  padding: 2px 10px;
+  color: #0a66c2;
+  cursor: pointer;
+  img {
+    color: #fff;
+    margin-left: 5px;
+  }
+  &:hover {
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.10);
+  }
 `
 const BannerCard = styled(FollowCard)`
   img {
@@ -78,4 +122,4 @@ const BannerCard = styled(FollowCard)`
     height: 100%;
   }
 `
-export { Container, FollowCard, Title, FeedList, Avatar, Recommendation, BannerCard }
+export { Container, FollowCard, Title, FeedList, Avatar, Recommendation, BannerCard, FollowButton }

@@ -1,4 +1,4 @@
-import { Container, FollowCard, Title, FeedList, Avatar, Recommendation, BannerCard } from './RightSide.style'
+import { Container, FollowCard, Title, FeedList, Avatar, Recommendation, BannerCard, FollowButton } from './RightSide.style'
 const RightSide = () => {
   return (
     <Container>
@@ -13,8 +13,20 @@ const RightSide = () => {
               <Avatar />
             </a>
             <div>
-              <span>#Linkedin</span>
-              <button>Follow</button>
+              <a>
+                <p>
+                  Satya Nadella
+                </p>
+                <div>
+                  <p>
+                    Chairman and CEO at Microsoft
+                  </p>
+                </div>
+              </a>
+              <FollowButton>
+                <img src="/images/plus-icon.png" alt="" />
+                <h1>Follow</h1>
+              </FollowButton>
             </div>
           </li>
           <li>
@@ -22,12 +34,48 @@ const RightSide = () => {
               <Avatar />
             </a>
             <div>
-              <span>#Video</span>
-              <button>Follow</button>
+              <a>
+                <p>
+                  Vera Filatova
+                </p>
+                <div>
+                  <p>
+                    IT Talent sourcer
+                  </p>
+                </div>
+
+              </a>
+              <FollowButton>
+                <img src="/images/plus-icon.png" alt="" />
+                <h1>Follow</h1>
+              </FollowButton>
+            </div>
+          </li>
+          <li>
+            <a>
+              <Avatar />
+            </a>
+            <div>
+              <a>
+                <p>
+                  Muhammad Khalil
+                </p>
+                <div>
+                  <p>
+                    Co-Founder at Mohirdev
+                  </p>
+                </div>
+
+              </a>
+              <FollowButton>
+                <img src="/images/plus-icon.png" alt="" />
+                <h1>Follow</h1>
+              </FollowButton>
             </div>
           </li>
         </FeedList>
-        <Recommendation>View all recommendations
+        <Recommendation>
+          View all recommendations
           <img src="/images/right-icon.svg" alt="right-icon" />
         </Recommendation>
       </FollowCard>
