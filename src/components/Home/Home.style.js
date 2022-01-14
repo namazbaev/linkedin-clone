@@ -5,9 +5,11 @@ const Container = styled.div`
   max-width: 100%;
 `
 const Content = styled.div`
+  display: flex;
+  align-items: center;
+  margin: 5px auto;
+  min-height: 100%;
   max-width: 1128px;
-  margin-left: auto;
-  margin-right: auto;
 `
 const Section = styled.div`
   min-height: 50px;
@@ -50,4 +52,4 @@ const Layout = styled.div`
   }
 `
 
-export { Container, Section, Layout }
+export { Container, Content, Section, Layout }

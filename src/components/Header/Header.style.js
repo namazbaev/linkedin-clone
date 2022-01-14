@@ -5,7 +5,7 @@ const Container = styled.div`
   border-bottom: 1px solid (rgba(0, 0, 0, 0.08));
   top: 0;
   left: 0;
-  padding: 0 24px;
+  padding: 0;
   position: fixed;
   width: 100vw;
   z-index: 100;
@@ -13,7 +13,8 @@ const Container = styled.div`
 const Content = styled.div`
   display: flex;
   align-items: center;
-  margin: 5px auto;
+  margin: 0 auto;
+  padding: 5px;
   min-height: 100%;
   max-width: 1128px;
 `
@@ -78,7 +79,7 @@ const NavListWrap = styled.ul`
       content: '';
       transform: scaleX(1);
       border-bottom: 1.5px solid var(--white, #fff);
-      bottom: 0;
+      bottom: -5px;
       left: 0;
       position: absolute;
       transition: transform 0.2s ease-in-out;
