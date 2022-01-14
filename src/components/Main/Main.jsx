@@ -1,11 +1,12 @@
+import { useSelector } from 'react-redux'
 import { Container, ShareBox, Article, SharedActor, Description, SharedImg, SocialCounts, SocialActions } from './Main.style'
 const Main = () => {
+  const user = useSelector(state => state.userState.user)
   return (
     <Container>
       <ShareBox>
-        Share
         <div>
-          <img src="/images/user.svg" alt="user" />
+          {user && user.photoURL ? <img src={user.photoURL} alt="nav-user" /> : <img src="/images/user.svg" alt="nav-user" />}
           <button>Start a post</button>
         </div>
         <div>

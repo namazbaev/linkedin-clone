@@ -51,6 +51,9 @@ const ShareBox = styled(CommonCard)`
         padding-left: 16px;
         background-color: #fff;
         border: 1px solid rgba(0, 0, 0, 0.15);
+         &:hover {
+        background-color: rgba(102, 102, 102, 0.10);
+      }
       }
     }
     &:nth-child(2) {
@@ -183,6 +186,7 @@ const SocialCounts = styled.ul`
     margin-right: 5px;
     font-size: 12px;
     span {
+      color: rgba(102, 102, 102, 0.6);
       &:hover {
         color: #0a66c2;
         cursor: pointer;

@@ -1,13 +1,15 @@
+import { useSelector } from 'react-redux'
 import { Container, ArtCard, UserInfo, CardBackground, Photo, Link, AddPhotoText, Widget, Item, CommunityCard } from './LeftSide.style'
 const LeftSide = () => {
+  const user = useSelector(state => state.userState.user)
   return (
     <Container>
       <ArtCard>
         <UserInfo>
           <CardBackground />
           <a>
-            <Photo />
-            <Link>Welcome, there!</Link>
+            <Photo imgUrl={user !== null ? user.photoURL : '/images/photo.svg'} />
+            <Link>Welcome, {user !== null ? user.displayName : 'there!'}</Link>
           </a>
           <a>
             <AddPhotoText>

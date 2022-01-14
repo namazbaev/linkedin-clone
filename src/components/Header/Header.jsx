@@ -1,5 +1,13 @@
+import { signOutUser } from '../../actions';
+import { useSelector, useDispatch } from 'react-redux'
 import { Container, Content, Logo, Search, SearchIcon, Nav, NavListWrap, NavList, User, Work, Try, SignOut } from './Header.style'
 const Header = () => {
+  const dispatch = useDispatch()
+  const user = useSelector(state => state.userState.user)
+  const signOut = () => {
+    dispatch(signOutUser())
+    window.location.pathname = '/'
+  }
   return (
     <Container>
       <Content>
@@ -50,12 +58,12 @@ const Header = () => {
             </NavList>
             <User>
               <a>
-                <img src="/images/user.svg" alt="nav-user" />
+                {user && user.photoURL ? <img src={user.photoURL} alt="nav-user" /> : <img src="/images/user.svg" alt="nav-user" />}
                 <span>Me
                   <img src="/images/down-icon.svg" alt="nav-down" />
                 </span>
               </a>
-              <SignOut>
+              <SignOut onClick={signOut}>
                 <a>Sign out</a>
               </SignOut>
             </User>

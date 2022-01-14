@@ -29,14 +29,14 @@ const CardBackground = styled.div`
 `
 const Photo = styled.div`
   box-shadow: none;
-  background-image: url('/images/photo.svg');
+  background-image: url(${(props) => props.imgUrl});
   width: 72px;
   height: 72px;
   box-sizing: border-box;
   background-clip: content-box;
   background-color: #fff;
   background-position: center;
-  background-size: 60%;
+  background-size: contain;
   background-repeat: no-repeat;
   border: 2px solid #fff;
   margin: -32px auto 12px;
