@@ -1,13 +1,33 @@
+import { useState } from 'react'
 import { useSelector } from 'react-redux'
+import { PostModal } from '../index'
 import { Container, ShareBox, Article, SharedActor, Description, SharedImg, SocialCounts, SocialActions } from './Main.style'
 const Main = () => {
+  const [showModal, setShowModal] = useState('close')
   const user = useSelector(state => state.userState.user)
+  const handleClick = e => {
+    e.preventDefault()
+    if (e.target !== e.currentTarget) {
+      return;
+    }
+
+    switch (showModal) {
+      case 'open':
+        setShowModal('close')
+        break;
+      case 'close':
+        setShowModal('open')
+        break;
+      default:
+        setShowModal('close')
+    }
+  }
   return (
     <Container>
       <ShareBox>
         <div>
           {user && user.photoURL ? <img src={user.photoURL} alt="nav-user" /> : <img src="/images/user.svg" alt="nav-user" />}
-          <button>Start a post</button>
+          <button onClick={handleClick}>Start a post</button>
         </div>
         <div>
           <button>
@@ -188,6 +208,7 @@ const Main = () => {
           </SocialActions>
         </Article>
       </div>
+      <PostModal showModal={showModal} handleClick={handleClick} />
     </Container>
   )
 }
