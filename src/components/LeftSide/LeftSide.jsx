@@ -1,4 +1,4 @@
-import { Container, ArtCard, UserInfo, CardBackground, Photo, Link, AddPhotoText, Widget, Item } from './LeftSide.style'
+import { Container, ArtCard, UserInfo, CardBackground, Photo, Link, AddPhotoText, Widget, Item, CommunityCard } from './LeftSide.style'
 const LeftSide = () => {
   return (
     <Container>
@@ -31,6 +31,23 @@ const LeftSide = () => {
           </span>
         </Item>
       </ArtCard>
+      <CommunityCard>
+        <a>
+          <span>Groups</span>
+        </a>
+        <a>
+          <span>
+            Events
+            <img src="/images/plus-icon.svg" alt="plus-icon" />
+          </span>
+        </a>
+        <a>
+          <span>Follow Hashtags</span>
+        </a>
+        <a>
+          <span>Discover more</span>
+        </a>
+      </CommunityCard>
     </Container>
   )
 }

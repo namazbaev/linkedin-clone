@@ -107,4 +107,42 @@ const Item = styled.a`
     background-color: rgba(0, 0, 0, 0.08);
   }
 `
-export { Container, ArtCard, UserInfo, CardBackground, Photo, Link, AddPhotoText, Widget, Item }
+const CommunityCard = styled(ArtCard)`
+  padding: 8px 0 0;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  a {
+    color: #000;
+    padding: 4px 12px 4px 12px;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 600;
+    color: #0a66c2;
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &:last-child {
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.6);
+      text-decoration: none;
+      border-top: 1px solid #0a66c2;
+      padding: 12px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.08);
+      }
+    }
+  }
+`
+export { Container, ArtCard, UserInfo, CardBackground, Photo, Link, AddPhotoText, Widget, Item, CommunityCard }
