@@ -85,12 +85,12 @@ const PostModal = ({ showModal, handleClick }) => {
             <ShareCreation>
               <AttachAssets>
                 <AssetButton onClick={() => switchAssetArea('image')}>
-                  <img src="/images/photo-upload.svg" alt="" />
+                  <img src="/images/plus-icon.svg" alt="" />
                 </AssetButton>
                 <AssetButton onClick={() => switchAssetArea('media')}>
-                  <img src="/images/photo-upload.svg" alt="" />
+                  <img src="/images/plus-icon.svg" alt="" />
                 </AssetButton>
-                <AssetButton>
+                {/* <AssetButton>
                   <img src="/images/photo-upload.svg" alt="" />
                 </AssetButton>
                 <AssetButton>
@@ -104,7 +104,7 @@ const PostModal = ({ showModal, handleClick }) => {
                 </AssetButton>
                 <AssetButton>
                   <img src="/images/ellipsis.svg" alt="" />
-                </AssetButton>
+                </AssetButton> */}
               </AttachAssets>
               <ShareComment>
                 <AssetButton>
